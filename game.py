@@ -2,12 +2,14 @@ import random
 from goblin import Goblin
 from hero import Hero
 
+
+
 def main():
     print("Welcome to the Battle Arena!")
     print("༼ ᓄºل͟º ༽ᓄ   ᕦ(ò_óˇ)ᕤ")
 
     # Create a hero
-    hero = Hero("Aragorn")
+    hero = Hero("SkibidiRizzlerOmegaAlphaSlayer!!!")
 
     # Create goblins ༼ ºل͟º ༽ ༼ ºل͟º ༽ ༼ ºل͟º ༽
     goblins = [Goblin(f"Goblin {i+1}") for i in range(3)]
