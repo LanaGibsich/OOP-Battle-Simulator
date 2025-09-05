@@ -28,7 +28,6 @@ class Hero:
         self.health -= damage
         if self.health < 0:
             self.health = 0
-        # TODO We should prevent the goblins health from going into the NEGATIVE
         print(f"{self.name} takes {damage} damage. Health is now {self.health}.")
 
     
