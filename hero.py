@@ -34,3 +34,7 @@ class Hero:
     
     def is_alive(self):
         return self.health > 0
+    
+    def is_dead(self):
+        return self.health > 0
+    
