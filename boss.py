@@ -8,3 +8,4 @@ class Boss(Enemy):
     def take_damage(self, damage):
         print("I WILL ALWAYS WIN YOU LOSER!!!")
         return super().take_damge(damage)
+    

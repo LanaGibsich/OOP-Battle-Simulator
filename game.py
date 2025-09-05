@@ -1,7 +1,7 @@
 import random
 from goblin import Goblin
 from hero import Hero
-
+from boss import Boss
 
 
 def main():
@@ -20,14 +20,16 @@ def main():
 
     # Battle Loop 
     round = 0
+    total=0
+    damage=0
+
+
     while hero.is_alive() and any(goblin.is_alive() for goblin in goblins):
         print("\nNew Round!")
         round +=1
         
         # Hero's turn to attack
         target_goblin = random.choice([goblin for goblin in goblins if goblin.is_alive()])
-        total= 0
-        damage =0
         damage = hero.strike()
         print(f"Hero attacks {target_goblin.name} for {damage} damage!")
         target_goblin.take_damage(damage)
@@ -50,6 +52,20 @@ def main():
     else:
         print(f"\nThe hero has been defeated. Game Over. (｡•́︿•̀｡)")
 
+print("BOSS TIME!!!!!")
+ #Create Boss
+boss = Boss("Skibidi Toilet", "red")
+while Hero.is_alive() and Boss.is_alive:
+    damage = Hero.strike
+    Boss.take_damage(damage)
+    damage = Boss.attack()
+    Hero.recive_damage(damage)
+
+    if Hero.is_alive:
+        print("WE BEAT THE BOSS")
+    else:
+        print("Your LOSE LOSER!!!")
+    
 
 
     # Final tally of goblins defeated
