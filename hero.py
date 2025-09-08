@@ -17,7 +17,7 @@ class Hero:
     
     def __init__(self, name):
          self.name = name
-         self.health = 200
+         self.health = 2000
          self.attack_power = random.randint(10, 25)
     
 
@@ -33,7 +33,5 @@ class Hero:
     
     def is_alive(self):
         return self.health > 0
-    
-    def is_dead(self):
-        return self.health > 0
+
     
